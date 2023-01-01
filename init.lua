@@ -1,0 +1,16 @@
+require("kumsuzM.plugins-setup") -- sets up packer and plugins
+require("kumsuzM.core.options") -- sets up our preffered vim options
+require("kumsuzM.core.keymaps")
+require("kumsuzM.plugins.comment")
+require("kumsuzM.plugins.nvim-tree")
+require("kumsuzM.plugins.lualine")
+require("kumsuzM.plugins.telescope")
+require("kumsuzM.plugins.nvim-cmp")
+require("kumsuzM.plugins.lsp.mason")
+require("kumsuzM.plugins.lsp.lspsaga")
+require("kumsuzM.plugins.lsp.lspconfig")
+require("kumsuzM.plugins.lsp.null-ls")
+require("kumsuzM.plugins.autopairs")
+require("kumsuzM.plugins.treesitter")
+require("kumsuzM.plugins.gitsigns")
+require("kumsuzM.plugins.vimtex")
