@@ -41,21 +41,6 @@ return packer.startup(function(use)
 
 	use("lervag/vimtex") -- latex
 
-	use({
-		"vimwiki/vimwiki",
-		config = function()
-			vim.g.vimwiki_list = {
-				{
-					path = "~/vimwiki/",
-					syntax = "markdown",
-					ext = ".md",
-				},
-			}
-		end,
-	})
-
-	use("wakatime/vim-wakatime")
-
 	use("ThePrimeagen/vim-be-good") -- Game for getting better at vim
 
 	-- essential plugins
