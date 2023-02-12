@@ -5,13 +5,14 @@ if not status then
 end
 
 -- get lualine gruvbox theme
-local lualine_gruvbox = require("lualine.themes.gruvbox_dark")
+-- local lualine_gruvbox = require("lualine.themes.gruvbox_dark")
+-- local lualine_material = require("lualine.themes.material")
 
 -- configure lualine with modified theme
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = lualine_gruvbox,
+		theme = "auto",
 	},
 	sections = {
 		lualine_a = {
