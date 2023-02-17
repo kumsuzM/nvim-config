@@ -78,6 +78,27 @@ lspconfig["cssls"].setup({
 
 -- configure tailwindcss server
 lspconfig["tailwindcss"].setup({
+	settings = {
+		editor = {
+			quickSuggestions = { strings = true },
+			autoClosingQuotes = "always",
+		},
+		tailwindCSS = {
+			experimental = {
+				classRegex = {
+					"tw`([^`]*)",
+					'tw="([^"]*)',
+					'tw={"([^"}]*)',
+					"tw\\.\\w+`([^`]*)",
+					"tw\\(.*?\\)`([^`]*)",
+				},
+			},
+			includeLanguages = {
+				typescript = "javascript",
+				typescriptreact = "javascript",
+			},
+		},
+	},
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
