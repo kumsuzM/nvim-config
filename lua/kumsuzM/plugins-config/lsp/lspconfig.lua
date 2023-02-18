@@ -62,6 +62,13 @@ lspconfig["html"].setup({
 	on_attach = on_attach,
 })
 
+-- configure c server
+lspconfig["clangd"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "c" },
+})
+
 -- configure typescript server with plugin
 typescript.setup({
 	server = {
